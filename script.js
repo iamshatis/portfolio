@@ -121,7 +121,7 @@ voyagers.style.transform = 'translateY(0)';
 //animation on scroll for the back quote area 
 
 const faders = document.querySelectorAll('.fade-in');
-const sliders = document.querySelectorAll('.from-top');
+const sliderTop = document.querySelectorAll('.from-top');
 
 const appearOptions = {
     rootMargin: "0px",
@@ -143,6 +143,7 @@ faders.forEach(fader =>{
     appearOnscroll.observe(fader);
 });
 
-sliders.forEach(slider => {
+sliderTop.forEach(slider => {
     appearOnscroll.observe(slider);
 });
+
