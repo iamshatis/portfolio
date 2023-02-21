@@ -246,8 +246,8 @@ header .contact P{
 	border-bottom-right-radius: 4rem;
 	color: black;
 	opacity: 0;
-	transform: translateY(-2rem);
-	transition: 1s ease-in;
+	transform: translateY(-1rem);
+	transition: 700ms ease-in;
 
 }
 
