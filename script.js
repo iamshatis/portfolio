@@ -122,10 +122,12 @@ voyagers.style.transform = 'translateY(0)';
 
 const faders = document.querySelectorAll('.fade-in');
 const sliderTop = document.querySelectorAll('.from-top');
+const sliderLeft = document.querySelectorAll('.from-left');
+const sliderRight = document.querySelectorAll('.from-right');
 
 const appearOptions = {
     rootMargin: "0px",
-    threshold: 0.5
+    threshold: 0.8
 };
 
 const appearOnscroll = new IntersectionObserver(function(entries, observer) {
@@ -144,6 +146,14 @@ faders.forEach(fader =>{
 });
 
 sliderTop.forEach(slider => {
+    appearOnscroll.observe(slider);
+});
+
+sliderLeft.forEach(slider => {
+    appearOnscroll.observe(slider);
+});
+
+sliderRight.forEach(slider => {
     appearOnscroll.observe(slider);
 });
 
