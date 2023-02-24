@@ -263,7 +263,7 @@
 			<img src="background/work (1).jpg" alt="message">
 			<p id="contact-form">Get in Touch</p>
 			<span>For the collaborations and further information<br>I am looking forward to hearing from you!</span>
-			<form onsubmit="sendEmail(); reset(); return false;">
+			<form id="contact-form" method="POST" action="/send_email" target="_blanck"">
 				<input id="email" type="email" name="email" placeholder="E-mail" required />
 				<input type="text" name="name" placeholder="Your Name" required>
 				<textarea placeholder="Message" name="Message" id="message" required></textarea>
