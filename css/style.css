@@ -20,7 +20,7 @@ body::-webkit-scrollbar{
 }
 
 header{
-	height: min(5em,15vw);
+	height: min(5em,20vw);
 	width: 100%;
 	top: 0;
 	display: flex;
@@ -37,7 +37,7 @@ header ul{
 
 header .navigations{
 	display: flex;
-/*	background: red;*/
+	/* background: red; */
 	height: 4rem;
 	align-items: center;
 	justify-content: space-between;
@@ -79,6 +79,7 @@ header .contact{
 	justify-content: center;
 	align-items: center;
 	transform: translateX(-1vw);
+	
 }
 
 header .contact P{
@@ -176,15 +177,16 @@ header .contact P{
 	animation: rotate 5s infinite linear;
 }
 
-	.welcome .intro p:nth-child(2){
-		height: 5rem;
-		width: 21rem;
-		position: relative;
-		transform: translateY(1.5vw);
-		opacity: 0;
-		transition: 1s ease-in;
+.welcome .intro p:nth-child(2){
+	height: 5rem;
+	width: 21rem;
+	position: relative;
+	transform: translateY(1.5vw);
+	font-size: 3.6rem;
+	opacity: 0;
+	transition: 1s ease-in;
 	}
-
+	
  .welcome .intro p:nth-child(2)::after{
 	content: '';
 	position: absolute;
@@ -209,9 +211,8 @@ header .contact P{
 	animation: scale 3s infinite linear;
 }
 
- .welcome .intro p{
+.welcome .intro p{
 	margin: 2rem 2rem ;
-	font-size: 3.6rem;
 	color: deepskyblue;
 	font-family: "Rubik Gemstones", san-serif;
 }
@@ -268,17 +269,14 @@ header .contact P{
 	align-items: center;
 	flex-direction: column;
 	margin-top: 0rem;
-/*	 overflow: hidden; */
 	pointer-events: none;
 	right: -1vw;
-/*	 background: orange; */
 }
 
 .welcome .me #my-pic{
 	min-height: 38rem;
-	height: min(40rem, 60vw);
-	transform: translate(0 , -15%);
-/*	 background: blue; */
+	height: min(50rem, 70vw);
+	transform: translate(0 , -10%);
 	overflow: hidden;
 } 
 
@@ -295,7 +293,6 @@ header .contact P{
 	align-items: center;
 	justify-content: center;
 	width: min(40rem,55vw);
-/*	background: red;*/
 	bottom: 0;
 	overflow: hidden;
 }
@@ -380,6 +377,8 @@ header .contact P{
 	border-radius: 10px;
 	border: 2px dashed black;
 	color: black;
+	height: min(19vw,5.5rem);
+
 }
 
 .welcome .me p:nth-child(3) span{
@@ -396,7 +395,6 @@ header .contact P{
 	color: white;
 	left: 2em;
 	bottom: 10rem;
-	z-index: 0;
 	color: deepskyblue;
 	font-family: 'Rubik Mono One';
 }
@@ -586,7 +584,7 @@ header .contact P{
 #introducing #intro span img{
 	position: absolute;
 	height: clamp(50vw, 31rem ,50em);
-	width: clamp(38vw, 25rem ,45em);
+	width: clamp(38vw, 24rem ,45em);
 	left: -50%;
 	top: -15%;
 	filter: drop-shadow(-10px 5px 5px #0009) brightness(100%) contrast(120%) saturate(110%);
@@ -596,7 +594,7 @@ header .contact P{
 #intro section{
 	position: relative;
 	top: 0;
-	height: max(45rem, 43vw);
+	height: max(47rem, 42vw);
 	width: auto;
 	padding: 5rem;
 	/* background: green; */
@@ -734,7 +732,7 @@ header .contact P{
 }
 
 .projects .main .text span:last-child{
-	font-size: max(2.5rem, 3vw);
+	font-size: max(2.2rem, 3vw);
 }
 
 .projects .main .text::after{
@@ -969,15 +967,10 @@ video{
 }	
 
 .contact-form{
-	height: min(100rem, 300vw);
-	width: 100vw;
 	background: white;
 	display: flex;
 	align-items: center;
 	flex-direction: column;
-	gap: 0rem;
-	padding: 2vw 1vw;
-	z-index:2;
 }
 
 .contact-form p{
@@ -1011,14 +1004,6 @@ form input{
 	width: max(70%, 20rem);
 	font-size: 1rem;
 	caret-color: orangered;
-}
-
-input:-webkit-autofill,
-input:-webkit-autofill:hover,
-input:-webkit-autofill:focus,
-input:-webkit-autofill:active{
-
-	box-shadow: inset 0 0 0 50px white;
 }
 
 form input:focus,

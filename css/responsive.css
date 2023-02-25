@@ -220,3 +220,25 @@
 }
 
 
+@media screen and (width <= 400px){
+	.welcome .intro img{
+		height: 20rem;
+		top: 8.5rem;
+	}
+
+	.welcome .intro p:nth-child(2){
+		width: 17.8rem;
+		font-size: 3.1rem;		
+	}
+
+	.welcome .intro p:nth-child(2)::after{
+		height: 1.8rem;
+		width: 1.8rem;
+	}
+
+	.welcome .me #my-pic{
+		transform: translate(0 , -5%);
+	}
+	
+}
+
