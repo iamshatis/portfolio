@@ -12,12 +12,15 @@ app.use(express.json());
 app.use(express.urlencoded({extended: true}));
 app.use(express.static(path.join(__dirname, "index.html")));
 
+
 app.post("/send_email", function(req, response){
-  var from = req.body.email;
-  var to = "shatisneupane2060@gmail.com";
+  var from = "shatisneupane2060@gmail.com";
+  var to = "abgyawali17@gmail.com";
   var name = req.body.name;
-  var subject = `${name} Sent you a message.`
-  var message = req.body.message;
+  var subject = `${name.charAt(0).toUpperCase()}${name.slice(1)} Contacting You from Your Website`
+  var message = `${req.body.message}
+  
+Contact here: ${req.body.email}`;
 
   var transporter = nodemailer.createTransport({
     service: "gmail",
@@ -37,8 +40,10 @@ app.post("/send_email", function(req, response){
   transporter.sendMail(mailOptions, function(error, info){
     if(error){
       console.log(error);
+      response.send(`<script>alert(Error sending message)</script>`);
     } else {
-      console.log('Email sent '+info.response )
+      console.log('Email sent '+info.response );
+      response.send(`<script>alert("You were Lucky your Message sent successfully, This never works😁")</script>`);
     }
     response.redirect("/")
   })
