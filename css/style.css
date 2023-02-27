@@ -988,7 +988,7 @@ video{
 }
 
 
-.contact-form form{
+.contact-form #contact-form{
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -997,7 +997,7 @@ video{
 	margin-top: 5rem;
 }
 
-form input{
+#contact-form input{
 	margin-bottom: 1rem;
 	padding: 0px 20px;
 	height: min(4rem,12vw);
@@ -1006,12 +1006,12 @@ form input{
 	caret-color: orangered;
 }
 
-form input:focus,
-form textarea{
+#contact-form input:focus,
+#contact-form textarea{
 	outline-color: orangered;
 }
 
-form textarea{
+#contact-form textarea{
 	height: 15rem;
 	width: max(70%, 20rem);
 	padding: 20px;
@@ -1022,7 +1022,7 @@ form textarea{
 	background: transparent;
 }
 
-form button {
+#contact-form button {
 	width: max(50%,15rem);
 	transform: translateY(1rem);
 	padding: 10px 0rem;

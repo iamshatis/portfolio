@@ -49,6 +49,16 @@
 	<script type="text/javascript" src="script.js" defer></script>
 	<!-- <script src="text/javascript" src="mail.js" defer></script> -->
 
+
+	<script type="text/javascript" src="index.js"></script>
+	<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+	</script>
+	<script type="text/javascript">
+		(function () {
+			emailjs.init("AOGFV89Y0dZMh_D45");
+		})();
+	</script>
+
 </head>
 
 <body>
@@ -263,12 +273,12 @@
 			<img src="background/work (1).jpg" alt="message">
 			<p id="contact-form">Get in Touch</p>
 			<span>For the collaborations and further information<br>I am looking forward to hearing from you!</span>
-			<form id="contact-form" method="POST" action="/send_email">
+			<div id="contact-form">
 				<input id="email" type="email" name="email" placeholder="E-mail" required />
-				<input type="text" name="name" placeholder="Your Name" required>
+				<input id="name" type="text" name="name" placeholder="Your Name" required>
 				<textarea placeholder="Message" name="message" id="message" required></textarea>
-				<button type="submit"><i class="fa-regular fa-paper-plane"></i></button>
-			</form>
+				<button type="submit" onclick="sendMail()"><i class="fa-regular fa-paper-plane"></i></button>
+			</div>
 		</div>
 
 	</div>
