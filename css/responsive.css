@@ -199,6 +199,14 @@
 	padding: 2rem;
 }
 
+.client > h2::after{
+	left: 0;
+}
+
+.client-left > h2{
+	left: 2rem;
+}
+
 }
 
 @media screen and (width <= 1500px){

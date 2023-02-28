@@ -12,30 +12,6 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 });
 
 
-
-// const links = document.querySelectorAll('a[href^="#"]');
-
-// links.forEach(link => {
-//   link.addEventListener('click', (e) => {
-//     const href = link.getAttribute('href');
-//     if (href.startsWith('#')) {
-//       e.preventDefault();
-//       const target = document.querySelector(href);
-//       if (target) {
-//         const topOffset = target.getBoundingClientRect().top + window.pageYOffset;
-//         console.log(topOffset);
-//         window.scrollIntoView({
-//           top: topOffset,
-//           behavior: 'smooth',
-//           duration: 2000 // customize the duration here (in milliseconds)
-//         });
-//       }
-//     }
-//   });
-// });
-
-
-
 // modal popUp  OnClick
 const video = document.getElementById("video");
 
@@ -62,7 +38,6 @@ for(const child of video.children){
 
 
 // animations on pass 
-
 const pass = document.querySelectorAll(".pass span");
 
 setInterval(()=>{
@@ -110,8 +85,6 @@ window.onload = () => {
  helloImg.style.opacity = '1';  
  helloTxt.style.opacity = '1';  
 
- welcome.style.color= 'white';  
- welcome.style.background = 'black';  
  welcome.style.opacity = '1';
 
 voyagers.style.opacity = '1';
@@ -127,7 +100,7 @@ const sliderRight = document.querySelectorAll('.from-right');
 
 const appearOptions = {
     rootMargin: "0px",
-    threshold: 0.8
+    threshold: 0.5
 };
 
 const appearOnscroll = new IntersectionObserver(function(entries, observer) {
