@@ -1035,13 +1035,11 @@ video{
 	left: 0;
 	cursor: pointer;
 }
-#contact > button:hover, 
-#contact > button:focus{
+#contact > button:hover{
 	background: orangered;
 	transition: 250ms ease-in;
 }
-button:hover > i,
-button:focus > i{
+button:hover > i{
 	color: white;
 	/* transform: rotate(30deg); */
 	transition: rotate 500ms ease-in;
