@@ -100,7 +100,7 @@ const sliderRight = document.querySelectorAll('.from-right');
 
 const appearOptions = {
     rootMargin: "0px",
-    threshold: 0.4
+    threshold: .7
 };
 
 const appearOnscroll = new IntersectionObserver(function(entries, observer) {
@@ -110,7 +110,6 @@ const appearOnscroll = new IntersectionObserver(function(entries, observer) {
             return;
         } else {
             entry.target.classList.add('appear');
-            // appearOnscroll.unobserve(entry.target);
         }
     })
 }, appearOptions); 

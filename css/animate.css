@@ -7,3 +7,47 @@
   75% { transform: translate(-15%, -27% ) rotate(5deg) } 
   100% { transform : translate(-15%, -27% ) rotate(10deg) }
 }
+
+/* faders */
+
+.fade-in {
+	opacity: 0;
+	transition: opacity 500ms ease-in;
+}
+
+.fade-in.appear {
+	opacity: 1;
+}
+
+.from-top {
+	transform: translateY(-2vh);
+	opacity: 0;
+	transition: opacity 500ms ease-in, transform 750ms ease-in;
+}
+
+.from-top.appear {
+	transform: translateY(0);
+	opacity: 1;
+}
+
+.from-left {
+	opacity: 0;
+	transform: translateX(-10%);
+	transition: 500ms ease-in;	
+}
+
+.from-right {
+	opacity: 0;
+	transform: translateX(10%);
+	transition: 500ms ease-in;
+}
+
+.from-left.appear {
+	opacity: 1;
+	transform: translateX(0);
+}
+
+.from-right.appear {
+	opacity: 1;
+	transform: translateX(0);
+}

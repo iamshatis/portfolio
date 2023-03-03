@@ -476,28 +476,6 @@ header .contact P {
 	/*	background: green;*/
 }
 
-.fade-in {
-	transform: translateY(5vh);
-	opacity: 0;
-	transition: 250ms ease-in;
-}
-
-.fade-in.appear {
-	transform: translateY(0);
-	opacity: 1;
-}
-
-.from-top {
-	transform: translateY(4vh);
-	opacity: 0;
-	transition: opacity 600ms ease-in, transform 1s ease-in;
-}
-
-.from-top.appear {
-	transform: translateY(0);
-	opacity: 1;
-}
-
 
 .container .back p>span {
 	font-family: "Dancing script", cursive;
