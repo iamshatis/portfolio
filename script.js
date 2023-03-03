@@ -100,16 +100,17 @@ const sliderRight = document.querySelectorAll('.from-right');
 
 const appearOptions = {
     rootMargin: "0px",
-    threshold: 0.5
+    threshold: 0.4
 };
 
 const appearOnscroll = new IntersectionObserver(function(entries, observer) {
     entries.forEach(entry => {
         if (!entry.isIntersecting){
+            entry.target.classList.remove('appear');
             return;
         } else {
             entry.target.classList.add('appear');
-            appearOnscroll.unobserve(entry.target);
+            // appearOnscroll.unobserve(entry.target);
         }
     })
 }, appearOptions); 

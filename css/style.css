@@ -479,7 +479,7 @@ header .contact P {
 .fade-in {
 	transform: translateY(5vh);
 	opacity: 0;
-	transition: 500ms ease-in;
+	transition: 250ms ease-in;
 }
 
 .fade-in.appear {
