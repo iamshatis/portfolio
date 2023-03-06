@@ -91,7 +91,7 @@ voyagers.style.opacity = '1';
 voyagers.style.transform = 'translateY(0)';
 }
 
-//animation on scroll for the back quote area 
+//Intersection Observers for animation on scroll
 
 const faders = document.querySelectorAll('.fade-in');
 const sliderTop = document.querySelectorAll('.from-top');

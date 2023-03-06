@@ -710,12 +710,13 @@ header .contact P {
 }
 
 .projects .main .text::after {
-	content: 'click to play »';
+	content: 'click on videos to play »';
 	position: relative;
 	bottom: -4rem;
 	color: #0009;
 	font-family: "yeon sung", sans-serif;
 	font-size: max(1.5rem, 2vw);
+	text-decoration: 1px wavy;
 }
 
 .projects #video {
@@ -726,6 +727,7 @@ header .contact P {
 	grid-template-columns: repeat(7, 1fr);
 	grid-template-rows: repeat(9, 1fr);
 	grid-gap: 10px;
+	cursor: pointer;
 }
 
 #popup-video {
