@@ -10,24 +10,16 @@
 
 /* faders */
 
-.fade-in {
+.from-bottom{
+	transform: translateY(5vh);
 	opacity: 0;
-	transition: opacity 500ms ease-in;
-}
-
-.fade-in.appear {
-	opacity: 1;
+	transition: opacity 500ms ease-in, transform 250ms ease-in;
 }
 
 .from-top {
-	transform: translateY(-2vh);
+	transform: translateY(-5vh);
 	opacity: 0;
-	transition: opacity 500ms ease-in, transform 750ms ease-in;
-}
-
-.from-top.appear {
-	transform: translateY(0);
-	opacity: 1;
+	transition: opacity 500ms ease-in, transform 250ms ease-in;
 }
 
 .from-left {
@@ -40,6 +32,12 @@
 	opacity: 0;
 	transform: translateX(10%);
 	transition: 500ms ease-in;
+}
+
+.from-top.appear,
+.from-bottom.appear{
+	transform: translateY(0);
+	opacity: 1;
 }
 
 .from-left.appear {

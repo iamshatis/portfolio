@@ -93,14 +93,14 @@ voyagers.style.transform = 'translateY(0)';
 
 //Intersection Observers for animation on scroll
 
-const faders = document.querySelectorAll('.fade-in');
 const sliderTop = document.querySelectorAll('.from-top');
+const sliderBottom = document.querySelectorAll('.from-bottom');
 const sliderLeft = document.querySelectorAll('.from-left');
 const sliderRight = document.querySelectorAll('.from-right');
 
 const appearOptions = {
     rootMargin: "0px",
-    threshold: .7
+    threshold: .5
 };
 
 const appearOnscroll = new IntersectionObserver(function(entries, observer) {
@@ -114,11 +114,12 @@ const appearOnscroll = new IntersectionObserver(function(entries, observer) {
     })
 }, appearOptions); 
 
-faders.forEach(fader =>{
-    appearOnscroll.observe(fader);
-});
 
 sliderTop.forEach(slider => {
+    appearOnscroll.observe(slider);
+});
+
+sliderBottom.forEach(slider => {
     appearOnscroll.observe(slider);
 });
 
