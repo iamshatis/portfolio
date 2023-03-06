@@ -13,13 +13,13 @@
 .from-bottom{
 	transform: translateY(5vh);
 	opacity: 0;
-	transition: opacity 500ms ease-in, transform 250ms ease-in;
+	transition: opacity 500ms ease-in, transform 500ms ease-in;
 }
 
 .from-top {
 	transform: translateY(-5vh);
 	opacity: 0;
-	transition: opacity 500ms ease-in, transform 250ms ease-in;
+	transition: opacity 500ms ease-in, transform 500ms ease-in;
 }
 
 .from-left {
