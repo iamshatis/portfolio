@@ -97,6 +97,7 @@ const sliderTop = document.querySelectorAll('.from-top');
 const sliderBottom = document.querySelectorAll('.from-bottom');
 const sliderLeft = document.querySelectorAll('.from-left');
 const sliderRight = document.querySelectorAll('.from-right');
+const grow = document.querySelectorAll('.grow');
 
 const appearOptions = {
     rootMargin: "0px",
@@ -128,6 +129,10 @@ sliderLeft.forEach(slider => {
 });
 
 sliderRight.forEach(slider => {
+    appearOnscroll.observe(slider);
+});
+
+grow.forEach(slider => {
     appearOnscroll.observe(slider);
 });
 

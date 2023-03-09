@@ -19,7 +19,7 @@
 .from-top {
 	transform: translateY(-5vh);
 	opacity: 0;
-	transition: opacity 500ms ease-in, transform 500ms ease-in;
+	transition: opacity 500ms ease-in, transform 750ms ease-in;
 }
 
 .from-left {
@@ -31,7 +31,7 @@
 .from-right {
 	opacity: 0;
 	transform: translateX(10%);
-	transition: 500ms ease-in;
+	transition: opacity 1s ease , translate 1s ease-in;
 }
 
 .from-top.appear,
@@ -48,4 +48,16 @@
 .from-right.appear {
 	opacity: 1;
 	transform: translateX(0);
+}
+
+.grow{
+	transform: translate(-50%, 70%) scale(0.7);
+	transform-origin: center;
+	transition: opacity 500ms ease-in, transform 500ms ease-in;
+}
+
+.grow.appear{
+	transform: translate(-50%, 70%) scale(1);
+	opacity: 1;
+
 }
