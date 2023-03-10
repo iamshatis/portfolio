@@ -42,6 +42,24 @@
 		/* background: yellow; */
 }
 
+footer{
+	padding: 1rem;
+	flex-direction: column;
+	row-gap: 5rem;
+}
+
+footer .foot-social {
+	align-self: flex-start;
+}
+
+footer .creator-social {
+	align-self: flex-end;
+}
+
+footer blockquote{
+	transform: translateY(-1rem);
+}
+
 }
 
 @media screen and ( width <= 950px){
@@ -184,8 +202,9 @@
 
 
 .client-view img{
-		left: 0rem;
-		transform: translate( 0,70%);
+		left: 2.5rem;
+		transform: translate( 0,70%) scale(0);
+		
 }
 
 .client-view .client::after{
@@ -211,7 +230,7 @@
 
 @media screen and (width <= 1500px){
 	#introducing #intro span{
-		top: 2rem
+		top: 2rem;
 	}
 }
 

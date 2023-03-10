@@ -1063,3 +1063,58 @@ button:hover>i {
 	/* transform: rotate(30deg); */
 	transition: rotate 500ms ease-in;
 }
+
+footer {
+	padding: 1rem 3rem;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	background:	white;
+	box-shadow: 0 -10px 10px rgba(0, 0, 0, 0.15)
+}
+
+footer > .foot-social a{
+	position: relative;
+	bottom: 0.5rem;
+	left: .5rem;
+}
+
+footer > .foot-social p{
+	font-family: 'Rubik', sans-serif;
+	color: rgba(0, 0, 0, 0.9);
+	font-size: 1.1rem;
+	/* border-bottom: 2px dotted; */
+}
+
+footer a{
+	text-decoration: none;
+	color: rgba(0, 0, 0, 0.65);
+	padding-right: 1rem;
+	font-size: 1.3rem;
+}
+
+
+footer blockquote{
+	font-size: 1.2rem;
+	font-family: 'Pacifico';
+	color: rgba(0, 0, 0, 0.8);
+}
+
+footer .creator-social {
+	position: relative;
+	height:4rem;
+	font-family:  'Rubik', sans-serif;
+	border-left: 2px solid;
+	border-radius: 0rem;
+	padding-left: 1rem;
+	color: black;
+}
+
+footer .creator-social a{
+	position: inherit;
+	top: .4rem;
+	left: .4rem;
+	font-size: 1.7rem;
+}
+
+
