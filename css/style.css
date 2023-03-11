@@ -968,14 +968,11 @@ video {
 	position: relative;
 	height: max(5rem, 9vw);
 	width: max(5rem, 9vw);
-	border-radius: 50%;
-	top: -4vw;
 	z-index: 2;
-	inset: 0;
 	border: .2rem solid transparent;
 
 	background: linear-gradient(30deg, orange, red, blue) border-box;
-	border-radius: 50%;
+	border-radius: 2rem;
 	mask:
 		linear-gradient(#fff 0 0) padding-box,
 		linear-gradient(#fff 0 0);
