@@ -584,13 +584,13 @@ header .contact P {
 	position: absolute;
 	transform: rotate(-10deg) translate(-3rem, -5rem);
 	border-radius: 50% 90% 0% 70%;
-	animation: tilt 2s infinite ease-in;
+	z-index: 2;
 }
 
 
 #intro section .present {
 	position: relative;
-	top: 6em;
+	top: min(25vw, 20%);
 	left: 2rem;
 	border-radius: 0 7rem 0 4rem;
 	height: auto;
@@ -599,19 +599,17 @@ header .contact P {
 	box-shadow: .5rem .5rem .8rem #0004;
 	backdrop-filter: blur(50px);
 	padding: 1rem 1rem 3rem 2rem;
-	/* background: red; */
 }
 
 #intro section .present p {
 	font-family: 'Montserrat', sans-serif;
 	font-weight: 400;
-	/*	text-decoration: 5px dashed underline;*/
-	font-size: max(1.7rem, 2.5vw);
+	font-size: clamp(1.7rem, 2.5vw , 7rem);
 }
 
 #intro section .present h1 {
 	color: #000c;
-	font-size: max(1.5rem, 2.3vw);
+	font-size: clamp(1.5rem, 2vw, 4rem);
 	font-family: 'Rubik', sans-serif;
 	padding-top: .7rem;
 	line-height: 1.5em;
