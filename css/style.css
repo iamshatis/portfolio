@@ -1070,7 +1070,7 @@ footer {
 	justify-content: space-between;
 	align-items: center;
 	background:	white;
-	box-shadow: 0 -10px 10px rgba(0, 0, 0, 0.15)
+	box-shadow: 0  -5px 15px rgba(0, 0, 0, 0.2)
 }
 
 footer > .foot-social a{
@@ -1104,7 +1104,7 @@ footer .creator-social {
 	position: relative;
 	height:4rem;
 	font-family:  'Rubik', sans-serif;
-	border-left: 2px solid;
+	border-left: 2px solid orangered;
 	border-radius: 0rem;
 	padding-left: 1rem;
 	color: black;
