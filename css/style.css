@@ -3,7 +3,6 @@
 	padding: 0;
 	box-sizing: border-box;
 	font-family: "Montserrat", sans-serif;
-	overflow-x: hidden;
 }
 
 html {
@@ -11,8 +10,9 @@ html {
 }
 
 body {
-	max-height: 100vh;
 	max-width: 100vw;
+	max-height: 100vh;
+	overflow-x: hidden;
 }
 
 body::-webkit-scrollbar {
@@ -90,8 +90,8 @@ header .contact P {
 }
 
 .container {
+	position: relative;
 	color: black;
-	height: 100vh;
 	width: 100%;
 }
 
@@ -457,8 +457,6 @@ header .contact P {
 	height: auto;
 	column-gap: 3rem;
 	pointer-events: none;
-	scroll-snap-type: y mandatory;
-	overflow-y: scroll;
 }
 
 .container .back img {
@@ -818,7 +816,6 @@ video {
 	width: 100vw;
 	padding: 10rem 5rem;
 	background: whitesmoke;
-
 }
 
 
@@ -860,18 +857,14 @@ video {
 	position: absolute;
 	top: 2rem;
 	background: linear-gradient(10deg, orange, blue, red, orange);
-	width: .1rem;
+	width: .5rem;
 	height: 95%;
-	left: 50%;
-	transform: translateX(-50%);
-	animation: moveline 6s linear forwards;
+	align-self: center;
 }
 
 .reviews .client-view {
 	position: relative;
-	/*	background: red;*/
 	display: flex;
-	justify-content: center;
 	flex-direction: column;
 	gap: 5rem;
 }
@@ -884,7 +877,6 @@ video {
 	border: 2px dashed #0008;
 	border-radius: 0rem 3rem 0rem 3rem;
 	transform: translateY(-50%);
-	overflow-x: visible;
 }
 
 .client-view .client-left {
@@ -1111,5 +1103,20 @@ footer .creator-social a{
 	left: .4rem;
 	font-size: 1.7rem;
 }
-
-
+ 
+  .timeline__tracker {
+	position: absolute;
+	place-self: center;
+	background: whitesmoke; 
+	z-index: 1;
+	top: 2rem;
+	height: 95%;
+	width: 10px;
+	transition: 750ms ease-in;
+}
+  
+  .fill{
+	position: sticky;
+	top: 7rem;
+  }
+  

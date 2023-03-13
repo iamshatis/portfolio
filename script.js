@@ -15,8 +15,8 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 // modal popUp  OnClick
 const video = document.getElementById("video");
 
-for(const child of video.children){
-    child.addEventListener("click", ()=>{
+for (const child of video.children) {
+    child.addEventListener("click", () => {
         document.querySelector('#popup-video').style.display = 'grid';
         const playVideo = document.querySelector('#popup-video video');
         playVideo.src = child.src;
@@ -24,14 +24,14 @@ for(const child of video.children){
         playVideo.play();
 
 
-    let closeBtn = document.querySelector(".close-btn");
-    closeBtn.onclick = () => {
-        playVideo.currentTime = 0;
-        playVideo.pause();
-        document.querySelector('#popup-video').style.display = 'none';        
-    }
+        let closeBtn = document.querySelector(".close-btn");
+        closeBtn.onclick = () => {
+            playVideo.currentTime = 0;
+            playVideo.pause();
+            document.querySelector('#popup-video').style.display = 'none';
+        }
 
-});
+    });
 
 };
 
@@ -40,55 +40,55 @@ for(const child of video.children){
 // animations on pass 
 const pass = document.querySelectorAll(".pass span");
 
-setInterval(()=>{
-pass.forEach((span, index) =>{
+setInterval(() => {
+    pass.forEach((span, index) => {
 
-    if(index === 0 ){return;}
-    setTimeout( () => {
-        span.style.display = '';
-        span.style.transition = '.7s ease-out';        
-        span.style.height = '';
-        span.style.opacity = "1";
+        if (index === 0) { return; }
+        setTimeout(() => {
+            span.style.display = '';
+            span.style.transition = '.7s ease-out';
+            span.style.height = '';
+            span.style.opacity = "1";
 
-    }, index*500); 
+        }, index * 500);
 
-    setTimeout( () => {
-        span.style.height = "0";
-        span.style.opacity = "0";
-        span.style.transition = '1s ';        
-    }, -1000*index);
-});
+        setTimeout(() => {
+            span.style.height = "0";
+            span.style.opacity = "0";
+            span.style.transition = '1s ';
+        }, -1000 * index);
+    });
 
 }, 3000)
 
 
-var timeId = setInterval( ()=>{
+var timeId = setInterval(() => {
     pass[0].style.opacity = '1';
-    pass[0].style.transition = '1s ease-out';        
+    pass[0].style.transition = '1s ease-out';
 
-    timeId = setTimeout(()=>{
+    timeId = setTimeout(() => {
         pass[0].style.opacity = '0'
-        pass[0].style.transition = '1s ease-out';        
-    } , 2700);
+        pass[0].style.transition = '1s ease-out';
+    }, 2700);
 
 }, 3000);
 
 
 //animation on welcome 
-var helloImg = document.querySelector('.intro img'); 
-var helloTxt = document.querySelector('.intro p:nth-child(2)'); 
+var helloImg = document.querySelector('.intro img');
+var helloTxt = document.querySelector('.intro p:nth-child(2)');
 var welcome = document.querySelector('.intro p:nth-child(3) span:first-child');
 var voyagers = document.querySelector('.intro p:nth-child(3) span:last-child');
 
 window.onload = () => {
 
- helloImg.style.opacity = '1';  
- helloTxt.style.opacity = '1';  
+    helloImg.style.opacity = '1';
+    helloTxt.style.opacity = '1';
 
- welcome.style.opacity = '1';
+    welcome.style.opacity = '1';
 
-voyagers.style.opacity = '1';
-voyagers.style.transform = 'translateY(0)';
+    voyagers.style.opacity = '1';
+    voyagers.style.transform = 'translateY(0)';
 }
 
 //Intersection Observers for animation on scroll
@@ -104,16 +104,16 @@ const appearOptions = {
     threshold: .5
 };
 
-const appearOnscroll = new IntersectionObserver(function(entries, observer) {
+const appearOnscroll = new IntersectionObserver(function (entries, observer) {
     entries.forEach(entry => {
-        if (!entry.isIntersecting){
+        if (!entry.isIntersecting) {
             entry.target.classList.remove('appear');
             return;
         } else {
             entry.target.classList.add('appear');
         }
     })
-}, appearOptions); 
+}, appearOptions);
 
 
 sliderTop.forEach(slider => {
@@ -135,5 +135,25 @@ sliderRight.forEach(slider => {
 grow.forEach(slider => {
     appearOnscroll.observe(slider);
 });
+
+
+// animation on line
+
+const tracker = document.querySelector(".timeline__tracker");
+const fill = document.querySelector(".fill");
+// console.log(bullet.offsetParent);
+
+document.addEventListener(
+  "scroll",
+  (e) => {
+      //       Timeline progress
+      tracker.style.background = `linear-gradient(180deg, transparent ${
+        fill.offsetTop + 450
+      }px, whitesmoke ${
+        tracker.offsetTop
+      }px)`;
+  },
+  { passive: true }
+);
 
 

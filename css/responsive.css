@@ -195,7 +195,8 @@ footer blockquote{
 	padding: 5rem 1rem;
 }
 
-.client-view::after{
+.client-view::after, 
+.timeline__tracker{
 	left: 2.5em;
 }	
 
@@ -210,6 +211,7 @@ footer blockquote{
 		left: -1rem;
 		transform: rotate(215deg);
 }
+
 
 .client-view .client{
 	width: 60vw;
