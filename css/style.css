@@ -3,6 +3,7 @@
 	padding: 0;
 	box-sizing: border-box;
 	font-family: "Montserrat", sans-serif;
+	overflow-x: hidden;
 }
 
 html {
@@ -12,7 +13,6 @@ html {
 body {
 	max-width: 100vw;
 	max-height: 100vh;
-	overflow-x: hidden;
 }
 
 body::-webkit-scrollbar {
@@ -877,6 +877,7 @@ video {
 	border: 2px dashed #0008;
 	border-radius: 0rem 3rem 0rem 3rem;
 	transform: translateY(-50%);
+	overflow-x: visible;
 }
 
 .client-view .client-left {
