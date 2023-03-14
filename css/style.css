@@ -11,8 +11,8 @@ html {
 }
 
 body {
-	max-width: 100vw;
 	max-height: 100vh;
+	max-width: 100vw;
 }
 
 body::-webkit-scrollbar {
@@ -90,9 +90,9 @@ header .contact P {
 }
 
 .container {
-	position: relative;
 	color: black;
 	width: 100%;
+	height: 100vh;
 }
 
 .container::-webkit-scrollbar {
@@ -727,7 +727,6 @@ header .contact P {
 }
 
 #popup-video {
-	position: relative;
 	height: 100vh;
 	width: 100%;
 	position: absolute;
@@ -738,6 +737,8 @@ header .contact P {
 	background: #0007;
 	backdrop-filter: blur(5px);
 	z-index: 100;
+	cursor: pointer;
+
 }
 
 #popup-video>button {
@@ -750,6 +751,7 @@ header .contact P {
 	background: transparent;
 	border: 2px solid;
 	color: white;
+	cursor: pointer;
 }
 
 #popup-video>video {
@@ -857,9 +859,10 @@ video {
 	position: absolute;
 	top: 2rem;
 	background: linear-gradient(10deg, orange, blue, red, orange);
-	width: .5rem;
+	width: 5px;
 	height: 95%;
 	align-self: center;
+	border-radius: 5rem;
 }
 
 .reviews .client-view {
@@ -1108,11 +1111,12 @@ footer .creator-social a{
   .timeline__tracker {
 	position: absolute;
 	place-self: center;
-	background: whitesmoke; 
-	z-index: 1;
+	background: transparent; 
 	top: 2rem;
 	height: 95%;
-	width: 10px;
+	width: 5px;
+	border-radius: 5rem;
+	z-index: 1;
 	transition: 750ms ease-in;
 }
   
