@@ -92,7 +92,6 @@ window.onload = () => {
 }
 
 //Intersection Observers for animation on scroll
-
 const sliderTop = document.querySelectorAll('.from-top');
 const sliderBottom = document.querySelectorAll('.from-bottom');
 const sliderLeft = document.querySelectorAll('.from-left');
@@ -137,22 +136,33 @@ grow.forEach(slider => {
 });
 
 
-// animation on line
+// animation on scrollTimeline
 
-const tracker = document.querySelector(".timeline__tracker");
-const fill = document.querySelector(".fill");
-// console.log(bullet.offsetParent);
+let client = document.querySelector('.reviews');
+let path = document.querySelector('.client-view svg path');
+let pathLength = path.getTotalLength();
 
-document.addEventListener(
-  "scroll",
-  (e) => {
-      //       Timeline progress
-      tracker.style.background = `linear-gradient(180deg, transparent ${
-        fill.offsetTop + 450
-      }px, whitesmoke ${
-        tracker.offsetTop
-      }px)`;
-  },
-  { passive: true }
-);
+path.style.strokeDasharray = pathLength + ' ' + pathLength;
+path.style.strokeDashoffset = pathLength;
+
+function animatePath() {
+  let scrollPercentage = (window.pageYOffset - client.offsetTop) / (client.offsetHeight - window.innerHeight);
+  let drawLength = pathLength * scrollPercentage;
+  path.style.strokeDashoffset = pathLength - drawLength;
+}
+
+const createLine = {
+    rootMargin:"20%"
+};
+
+let observer = new IntersectionObserver((entries) => {
+  if (entries[0].isIntersecting) {
+    window.addEventListener('scroll', animatePath);
+  } else {
+    window.removeEventListener('scroll', animatePath);
+  }
+}, createLine);
+
+observer.observe(client);
+
 

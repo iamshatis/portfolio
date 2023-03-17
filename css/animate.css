@@ -31,7 +31,7 @@
 .from-right {
 	opacity: 0;
 	transform: translateX(10%);
-	transition: opacity 1s ease , translate 1s ease-in;
+	transition: opacity 500ms ease , transform 500ms ease-in;
 }
 
 .from-top.appear,

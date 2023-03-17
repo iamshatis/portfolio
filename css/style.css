@@ -1,12 +1,19 @@
-* {
+/* This Lines meant to give the possible amount of effectiveness...
+Explore the code and suggest if required improvements on this sites form
+I guess that works well 🤦‍♂️*/
+
+/* Text-Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Dancing+Script&family=Lato:wght@400;700&family=Montserrat:ital,wght@0,500;1,400&family=Pacifico&family=Poppins:wght@400;600&family=Roboto&family=Rubik+Gemstones&family=Rubik+Mono+One&family=Rubik:wght@400;600&family=Seymour+One&family=Yeon+Sung&display=swap');
+
+*,
+*::after,
+*::before {
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
 	font-family: "Montserrat", sans-serif;
-	overflow-x: hidden;
-}
-
-html {
+	/* overflow-x: hidden; */
+	/* overflow-y: auto!important; */
 	scroll-behavior: smooth;
 }
 
@@ -30,8 +37,8 @@ header {
 }
 
 header ul {
-	list-style: none;
 	position: relative;
+	list-style: none;
 	left: 2vw;
 }
 
@@ -43,24 +50,20 @@ header .navigations {
 	column-gap: 4rem;
 }
 
-header .navigations a {
+.navigations a {
 	text-decoration: none;
-}
-
-header .navigations a {
-	/*	background: black;*/
 	color: black;
 	font-size: min(1.5rem, 5vw);
 	font-family: "Rubik mono one", sans-serif;
 }
 
-header .navigations a:first-child i {
+ .navigations a:first-child i {
 	color: black;
 	font-size: min(1.8rem, 6vw);
 	transform: translate(10px, 2px);
 }
 
-header .navigations a:last-child {
+ .navigations a:last-child {
 	color: #000a;
 	font-size: 1.8rem;
 	font-family: 'Roboto', cursive;
@@ -77,10 +80,10 @@ header .contact {
 	justify-content: center;
 	align-items: center;
 	transform: translateX(-1vw);
-
+	
 }
 
-header .contact P {
+.contact P {
 	font-size: min(1.2rem, 3.5vw);
 	color: deepskyblue;
 	border: 3px solid deepskyblue;
@@ -88,17 +91,6 @@ header .contact P {
 	padding: 10px 15px;
 	font-family: "Seymour One", sans-serif;
 }
-
-.container {
-	color: black;
-	width: 100%;
-	height: 100vh;
-}
-
-.container::-webkit-scrollbar {
-	display: none;
-}
-
 
 .welcome .social {
 	display: flex;
@@ -110,12 +102,12 @@ header .contact P {
 	font-size: 1.7rem;
 }
 
-.container .social a {
+ .social a {
 	color: #0008;
 	margin-bottom: 2.7rem;
 }
 
-.container .social a i::after {
+ .social a i::after {
 	content: '';
 	position: absolute;
 	left: .7rem;
@@ -125,24 +117,23 @@ header .contact P {
 	background: #0005;
 }
 
-.container .social a:nth-child(1) i::after {
+ .social a:nth-child(1) i::after {
 	top: 2.5rem;
 }
 
-.container .social a:nth-child(2) i::after {
+ .social a:nth-child(2) i::after {
 	top: 7.5rem;
 }
 
-.container .social a:nth-child(3) i::after {
+ .social a:nth-child(3) i::after {
 	top: 12.5rem;
 }
 
-.container .social a:nth-child(4) i::after {
+ .social a:nth-child(4) i::after {
 	height: 0;
 }
 
 .container .welcome {
-	height: auto;
 	width: 100%;
 	position: relative;
 	display: flex;
@@ -153,7 +144,7 @@ header .contact P {
 	margin-bottom: 10rem;
 }
 
-.container .welcome .intro {
+ .welcome .intro {
 	position: relative;
 	top: 0;
 	display: flex;
@@ -164,7 +155,7 @@ header .contact P {
 	width: max(43%, 28rem);
 }
 
-.welcome .intro img {
+ .intro img {
 	position: absolute;
 	height: 23rem;
 	filter: invert(48%) sepia(80%) saturate(1100%) hue-rotate(155deg) brightness(100%);
@@ -172,7 +163,7 @@ header .contact P {
 	animation: rotate 5s infinite linear;
 }
 
-.welcome .intro p:nth-child(2) {
+ .intro p:nth-child(2) {
 	height: 5rem;
 	width: 21rem;
 	position: relative;
@@ -182,7 +173,7 @@ header .contact P {
 	transition: 500ms ease-in;
 }
 
-.welcome .intro p:nth-child(2)::after {
+ .intro p:nth-child(2)::after {
 	content: '';
 	position: absolute;
 	height: 2rem;
@@ -194,7 +185,7 @@ header .contact P {
 	animation: scale 5s infinite linear;
 }
 
-.welcome .intro p:nth-child(2)::before {
+ .intro p:nth-child(2)::before {
 	content: '';
 	position: absolute;
 	height: 1.2rem;
@@ -206,13 +197,13 @@ header .contact P {
 	animation: scale 3s infinite linear;
 }
 
-.welcome .intro p {
+ .intro p {
 	margin: 2rem 2rem;
 	color: deepskyblue;
 	font-family: "Rubik Gemstones", san-serif;
 }
 
-.welcome .intro p:nth-child(3) {
+ .intro p:nth-child(3) {
 	display: flex;
 	flex-direction: column;
 	position: relative;
@@ -220,7 +211,7 @@ header .contact P {
 	left: -3rem;
 }
 
-.welcome .intro p:nth-child(3) span:first-child {
+.intro p:nth-child(3) span:first-child {
 	font-family: "Rubik Mono One", sans-serif;
 	font-size: 2rem;
 	color: black;
@@ -233,7 +224,7 @@ header .contact P {
 
 }
 
-.welcome .intro p:nth-child(3) span:last-child {
+ .intro p:nth-child(3) span:last-child {
 	position: relative;
 	font-family: "Yeon sung", sans-serif;
 	font-size: min(6.5vw, 6.5rem);
@@ -248,7 +239,7 @@ header .contact P {
 
 }
 
-.welcome .intro p:nth-child(3) span:last-child::after {
+ .intro p:nth-child(3) span:last-child::after {
 	content: '"';
 	position: absolute;
 	right: 0;
@@ -269,20 +260,20 @@ header .contact P {
 	right: -1vw;
 }
 
-.welcome .me #my-pic {
+ .me #my-pic {
 	min-height: 38rem;
 	height: min(50rem, 70vw);
 	transform: translate(0, -10%);
 	overflow: hidden;
 }
 
-.welcome .me #my-pic img:first-child {
+ .me #my-pic img:first-child {
 	height: min(40rem, 160vw);
 	transform: translate(-10%, 0);
 	filter: saturate(120%);
 }
 
-.welcome .me #cloud-txt {
+ #cloud-txt {
 	position: absolute;
 	height: 30rem;
 	display: flex;
@@ -293,7 +284,7 @@ header .contact P {
 	overflow: hidden;
 }
 
-.welcome .me #cloud-txt img:nth-child(1) {
+ #cloud-txt img:nth-child(1) {
 	position: absolute;
 	/* transform: rotate(10deg); */
 	bottom: 0rem;
@@ -301,28 +292,28 @@ header .contact P {
 
 }
 
-.welcome .me #cloud-txt img:nth-child(2) {
+ #cloud-txt img:nth-child(2) {
 	position: absolute;
 	bottom: 8rem;
 	left: 12rem;
 	transform: rotate(10deg);
 }
 
-.welcome .me #cloud-txt img:nth-child(3) {
+ #cloud-txt img:nth-child(3) {
 	position: absolute;
 	bottom: 3rem;
 	left: 18rem;
 	transform: rotate(200deg);
 }
 
-.welcome .me #cloud-txt img:nth-child(4) {
+ #cloud-txt img:nth-child(4) {
 	position: absolute;
 	bottom: 5rem;
 	left: 15rem;
 	transform: rotate(180deg);
 }
 
-.welcome .me #cloud-txt img:nth-child(5) {
+ #cloud-txt img:nth-child(5) {
 	position: absolute;
 	bottom: 2rem;
 	left: 13rem;
@@ -330,14 +321,14 @@ header .contact P {
 	z-index: 2;
 }
 
-.welcome .me #cloud-txt img:nth-child(6) {
+ #cloud-txt img:nth-child(6) {
 	position: absolute;
 	bottom: 2rem;
 	left: 3rem;
 
 }
 
-.welcome .me #cloud-txt img:nth-child(7) {
+ #cloud-txt img:nth-child(7) {
 	position: absolute;
 	bottom: 4rem;
 	left: 1rem;
@@ -345,7 +336,7 @@ header .contact P {
 }
 
 
-.welcome .me #cloud-txt img:nth-child(8) {
+ #cloud-txt img:nth-child(8) {
 	position: absolute;
 	bottom: 1rem;
 	left: 1rem;
@@ -353,7 +344,7 @@ header .contact P {
 	z-index: 2;
 }
 
-.welcome .me #cloud-txt img:nth-child(9) {
+ #cloud-txt img:nth-child(9) {
 	position: absolute;
 	bottom: 2rem;
 	left: 0rem;
@@ -361,12 +352,12 @@ header .contact P {
 	z-index: 2;
 }
 
-.welcome .me p {
+.me p {
 	position: relative;
 	font-size: clamp(25px, 2rem, 6vw);
 }
 
-.welcome .me p:nth-child(3) {
+ .me p:nth-child(3) {
 	transform: translate(0rem, -2vw);
 	font-family: "Rubik Mono One", sans-serif;
 	padding: 1rem;
@@ -377,7 +368,7 @@ header .contact P {
 
 }
 
-.welcome .me p:nth-child(3) span {
+ .me p:nth-child(3) span {
 	background: deepskyblue;
 	font-family: "Rubik Mono One", sans-serif;
 	color: white;
@@ -385,7 +376,7 @@ header .contact P {
 	border-radius: 5px;
 }
 
-.welcome .me>#cloud-txt>p {
+ #cloud-txt>p {
 	font-size: min(4rem, 25vw);
 	position: absolute;
 	color: white;
@@ -416,7 +407,7 @@ header .contact P {
 	background: grey;
 }
 
-.container .pass span:first-child {
+.pass span:first-child {
 	content: '';
 	top: 0;
 	left: 0;
@@ -425,21 +416,21 @@ header .contact P {
 	border-radius: 50%;
 }
 
-.container .pass span:nth-child(2) {
+ .pass span:nth-child(2) {
 	content: '';
 	top: 8px;
 	height: 10px;
 	border-radius: 1rem;
 }
 
-.container .pass span:nth-child(3) {
+ .pass span:nth-child(3) {
 	content: '';
 	top: 16px;
 	height: 25px;
 	border-radius: 1rem;
 }
 
-.container .pass span:last-child {
+ .pass span:last-child {
 	content: '';
 	top: 24px;
 	left: 0;
@@ -453,29 +444,26 @@ header .contact P {
 	justify-content: center;
 	align-items: center;
 	flex-direction: column;
-	/*	row-gap: 3rem;*/
-	height: auto;
 	column-gap: 3rem;
 	pointer-events: none;
 }
 
-.container .back img {
+ .back img {
 	height: max(30vw, 25rem);
 	filter: sepia(10%) hue-rotate(220deg);
 }
 
-.container .back p {
+ .back p {
 	font-family: "Rubik", cursive;
 	color: #0008;
 	width: auto;
 	letter-spacing: .2rem;
 	font-size: min(5vw, 5rem);
 	margin-bottom: 10rem;
-	/*	background: green;*/
 }
 
 
-.container .back p>span {
+ .back p>span {
 	font-family: "Dancing script", cursive;
 	color: #2b86e0;
 	font-size: min(10vw, 10rem);
@@ -500,18 +488,16 @@ header .contact P {
 	top: -1rem;
 }
 
-.container #introducing {
+ #introducing {
 	position: relative;
 	height: max(70rem, 80vh);
-	/*	padding: 0 1rem;*/
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	background: linear-gradient(0deg, #B3F6D8, #52A7C1);
-	/* background: red; */
 }
 
-.container #introducing #intro {
+#introducing #intro {
 	display: flex;
 	align-items: center;
 	flex-wrap: wrap;
@@ -524,10 +510,9 @@ header .contact P {
 	background-position: left;
 	background-size: cover;
 	box-shadow: 0px 0px 25px #0005;
-	/* background: red; */
 }
 
-.container #introducing #intro::before {
+ #introducing #intro::before {
 	content: "";
 	position: absolute;
 	height: 100%;
@@ -538,12 +523,10 @@ header .contact P {
 	z-index: 0;
 }
 
-#introducing #intro span {
+ #intro span {
 	position: relative;
 	height: max(20vw, 13em);
 	width: max(20vw, 13em);
-	/*	top: 3em;*/
-	/*	left: 1rem;*/
 	border-radius: 50%;
 	box-shadow:
 		10px 10px 7px 5px #B3F6D8,
@@ -553,7 +536,7 @@ header .contact P {
 	overflow: hidden;
 }
 
-#introducing #intro span img {
+ #intro span img {
 	position: absolute;
 	height: clamp(50vw, 31rem, 50em);
 	width: clamp(38vw, 24rem, 45em);
@@ -569,8 +552,6 @@ header .contact P {
 	height: max(47rem, 42vw);
 	width: auto;
 	padding: 5rem;
-	/* background: green; */
-	/*	margin-top: -35em;*/
 }
 
 #intro section em {
@@ -591,7 +572,6 @@ header .contact P {
 	top: min(25vw, 20%);
 	left: 2rem;
 	border-radius: 0 7rem 0 4rem;
-	height: auto;
 	width: max(50rem, 40vw);
 	background: transparent;
 	box-shadow: .5rem .5rem .8rem #0004;
@@ -599,13 +579,13 @@ header .contact P {
 	padding: 1rem 1rem 3rem 2rem;
 }
 
-#intro section .present p {
+ .present p {
 	font-family: 'Montserrat', sans-serif;
 	font-weight: 400;
 	font-size: clamp(1.7rem, 2.5vw , 7rem);
 }
 
-#intro section .present h1 {
+ .present h1 {
 	color: #000c;
 	font-size: clamp(1.5rem, 2vw, 4rem);
 	font-family: 'Rubik', sans-serif;
@@ -613,7 +593,7 @@ header .contact P {
 	line-height: 1.5em;
 }
 
-#intro section .present .txt::before {
+.present .txt::before {
 	content: '“';
 	font-family: "Montserrat", sans-serif;
 	font-size: max(7vw, 4rem);
@@ -623,7 +603,7 @@ header .contact P {
 	color: green;
 }
 
-#intro section .present .txt::after {
+ .present .txt::after {
 	content: '”';
 	font-family: "Montserrat", sans-serif;
 	font-size: max(7vw, 4rem);
@@ -633,12 +613,11 @@ header .contact P {
 	color: green;
 }
 
-#intro section .present .txt {
+ .present .txt {
 	font-size: max(1.7vw, 1.1rem);
 	font-family: 'Lato', sans-serif;
 	line-height: 1.3em;
 	padding: 3rem 3vw 2rem 5vw;
-	/*	background: yellow;*/
 	transform: translate(-.5em, .5em);
 	overflow: hidden;
 	color: #000b;
@@ -654,7 +633,7 @@ header .contact P {
 
 }
 
-.container .projects .main {
+ .projects .main {
 	display: flex;
 	align-items: center;
 	flex-wrap: wrap;
@@ -663,36 +642,33 @@ header .contact P {
 	font-size: 2rem;
 	width: 97vw;
 	padding: 1rem;
-	/*	background: red;*/
-
 }
 
-.projects .main .text {
+ .main .text {
 	display: flex;
 	justify-content: center;
 	flex-direction: column;
 	color: #000b;
 	border-left: 3px solid black;
 	padding: 5rem 1rem;
-	/*	max-height: 30em;*/
 	height: max(15em, 35vw);
 	width: auto;
 }
 
-.projects .main .text span {
+ .text span {
 	font-family: "Rubik Mono One", sans-serif;
 }
 
-.projects .main .text span:first-child {
+ .text span:first-child {
 	font-size: max(2rem, 3vw);
 }
 
-.projects .main .text span:nth-child(2) {
+ .text span:nth-child(2) {
 	font-size: max(4rem, 4vw);
 	color: royalblue;
 }
 
-.projects .main .text span:nth-child(3) {
+ .text span:nth-child(3) {
 	font-size: max(2rem, 2.5vw);
 	background: royalblue;
 	color: white;
@@ -701,11 +677,11 @@ header .contact P {
 	line-height: max(3rem, 3.5vw);
 }
 
-.projects .main .text span:last-child {
+ .text span:last-child {
 	font-size: max(2.2rem, 3vw);
 }
 
-.projects .main .text::after {
+ .main .text::after {
 	content: 'click on videos to play »';
 	position: relative;
 	bottom: -4rem;
@@ -715,10 +691,9 @@ header .contact P {
 	text-decoration: 1px wavy;
 }
 
-.projects #video {
+ #video {
 	display: grid;
 	width: max(60rem, 50vw);
-	height: auto;
 	color: white;
 	grid-template-columns: repeat(7, 1fr);
 	grid-template-rows: repeat(9, 1fr);
@@ -820,7 +795,6 @@ video {
 	background: whitesmoke;
 }
 
-
 .container .review-img {
 	display: flex;
 	justify-content: space-around;
@@ -831,7 +805,6 @@ video {
 
 .review-img img {
 	height: min(25rem, 80vw);
-	/*display: none;*/
 }
 
 .review-img blockquote {
@@ -842,7 +815,6 @@ video {
 	padding: 2rem;
 	gap: 10px;
 	color: #0009;
-	/*	background: white;*/
 	font-family: sans-serif;
 }
 
@@ -853,16 +825,16 @@ video {
 	padding-left: 10px;
 }
 
-
-.client-view::after {
-	content: '';
+.client-view svg{
 	position: absolute;
-	top: 2rem;
-	background: linear-gradient(10deg, orange, blue, red, orange);
-	width: 5px;
+	top: 7rem;
+	left: 50%;
 	height: 95%;
-	align-self: center;
-	border-radius: 5rem;
+	transform: translateX(-35%);
+}
+
+.client-view svg path{
+	transition: stroke-dashoffset 250ms;
 }
 
 .reviews .client-view {
@@ -1087,7 +1059,7 @@ footer a{
 
 footer blockquote{
 	font-size: 1.2rem;
-	font-family: 'Pacifico';
+	font-family: 'Pacifico', sans-serif;
 	color: rgba(0, 0, 0, 0.8);
 }
 
@@ -1108,20 +1080,3 @@ footer .creator-social a{
 	font-size: 1.7rem;
 }
  
-  .timeline__tracker {
-	position: absolute;
-	place-self: center;
-	background: transparent; 
-	top: 2rem;
-	height: 95%;
-	width: 5px;
-	border-radius: 5rem;
-	z-index: 1;
-	transition: 750ms ease-in;
-}
-  
-  .fill{
-	position: sticky;
-	top: 7rem;
-  }
-  
