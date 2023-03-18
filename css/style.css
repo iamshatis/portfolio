@@ -10,8 +10,7 @@ I guess that works well 🤦‍♂️*/
 	padding: 0;
 	box-sizing: border-box;
 	font-family: "Montserrat", sans-serif;
-	overflow-x: hidden;
-	/* overflow-y: auto!important; */
+	/* overflow-x: hidden; */
 	scroll-behavior: smooth;
 }
 
