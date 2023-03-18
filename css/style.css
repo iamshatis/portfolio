@@ -504,7 +504,7 @@ header .contact {
 	justify-content: space-around;
 	width: min(95%, 90vw);
 	border-radius: min(8vw, 7rem);
-	background: linear-gradient(10deg, #fff1, #0f02), url("/background/image.jpg");
+	background: linear-gradient(10deg, #fff1, #0f02), url("../images/background/image.jpg");
 	backdrop-filter: opacity(0);
 	background-repeat: no-repeat;
 	background-position: left;
