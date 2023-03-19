@@ -17,13 +17,11 @@ const video = document.getElementById("video");
 
 for (const child of video.children) {
     child.addEventListener("click", () => {
-        document.querySelector('*').style.overflowX = 'hidden';
         document.querySelector('#popup-video').style.display = 'grid';
         const playVideo = document.querySelector('#popup-video video');
         playVideo.src = child.src;
         playVideo.setAttribute("controlslist", "nodownload")
         playVideo.play();
-
 
         let closeBtn = document.querySelector(".close-btn");
         closeBtn.onclick = () => {
@@ -31,11 +29,8 @@ for (const child of video.children) {
             playVideo.pause();
             document.querySelector('#popup-video').style.display = 'none';
         }
-
     });
-
 };
-
 
 
 // animations on pass 
@@ -43,14 +38,12 @@ const pass = document.querySelectorAll(".pass span");
 
 setInterval(() => {
     pass.forEach((span, index) => {
-
         if (index === 0) { return; }
         setTimeout(() => {
             span.style.display = '';
             span.style.transition = '.7s ease-out';
             span.style.height = '';
             span.style.opacity = "1";
-
         }, index * 500);
 
         setTimeout(() => {

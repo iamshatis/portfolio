@@ -221,7 +221,6 @@ header .contact {
 	color: white;
 	background: black;
 	opacity: 0;
-
 }
 
  .intro p:nth-child(3) span:last-child {
@@ -236,7 +235,6 @@ header .contact {
 	opacity: 0;
 	transform: translateY(-.7rem);
 	transition: 500ms ease-in;
-
 }
 
  .intro p:nth-child(3) span:last-child::after {
@@ -325,7 +323,6 @@ header .contact {
 	position: absolute;
 	bottom: 2rem;
 	left: 3rem;
-
 }
 
  #cloud-txt img:nth-child(7) {
@@ -334,7 +331,6 @@ header .contact {
 	left: 1rem;
 	transform: rotate(200deg);
 }
-
 
  #cloud-txt img:nth-child(8) {
 	position: absolute;
@@ -703,9 +699,9 @@ header .contact {
 #popup-video {
 	height: 100vh;
 	width: 100%;
-	position: absolute;
+	position: fixed;
 	top: 0;
-	right: 0;
+	left: 0;
 	display: none;
 	place-items: center;
 	background: #0007;
@@ -730,17 +726,6 @@ header .contact {
 #popup-video>video {
 	height: fit-content;
 	width: 80vw;
-}
-
-
-.play {
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%);
-	height: fit-content;
-	width: 95vw;
-	z-index: 100;
 }
 
 video {
