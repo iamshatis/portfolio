@@ -10,7 +10,6 @@ I guess that works well 🤦‍♂️*/
 	padding: 0;
 	box-sizing: border-box;
 	font-family: "Montserrat", sans-serif;
-	/* overflow-x: hidden; */
 	scroll-behavior: smooth;
 }
 
@@ -128,6 +127,10 @@ header .contact {
 
  .social a:nth-child(4) i::after {
 	height: 0;
+}
+
+.container {
+	overflow-x: hidden;
 }
 
 .container .welcome {
@@ -627,7 +630,6 @@ header .contact {
 	height: 100rem;
 	width: auto;
 	background: white;
-
 }
 
  .projects .main {
@@ -710,7 +712,6 @@ header .contact {
 	backdrop-filter: blur(5px);
 	z-index: 100;
 	cursor: pointer;
-
 }
 
 #popup-video>button {

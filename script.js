@@ -17,6 +17,7 @@ const video = document.getElementById("video");
 
 for (const child of video.children) {
     child.addEventListener("click", () => {
+        document.querySelector('*').style.overflowX = 'hidden';
         document.querySelector('#popup-video').style.display = 'grid';
         const playVideo = document.querySelector('#popup-video video');
         playVideo.src = child.src;
