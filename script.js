@@ -48,7 +48,7 @@ selectVideo.forEach(video =>{
 
     });
 
-    video.addEventListener('mouseleave', ()=>{
+    video.addEventListener('mouseout', ()=>{
         video.style.scale= '1';
         video.currentTime = 0;
         video.pause();
