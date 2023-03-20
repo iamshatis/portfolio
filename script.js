@@ -11,6 +11,28 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     });
 });
 
+// hover Effect on project Section
+const selectVideo = document.querySelectorAll('#video video');
+selectVideo.forEach(video =>{
+    video.addEventListener('mouseover', ()=>{
+        
+        video.style.scale= '.9';
+        video.style.transition = '250ms ease-out'
+        video.play(); video.muted = true;
+        video.currentTime = 10;
+        setTimeout(() => {
+            video.currentTime = 0;
+            video.pause();
+            video.style.scale = '1';
+       }, 7000);
+    });
+    
+    video.addEventListener('mouseout', ()=>{
+        video.style.scale= '1';
+        video.currentTime = 0;
+        video.pause();
+    });
+});
 
 // modal popUp  OnClick
 const video = document.getElementById("video");
@@ -31,30 +53,6 @@ for (const child of video.children) {
         }
     });
 };
-
-
-const selectVideo = document.querySelectorAll('#video video');
-
-selectVideo.forEach(video =>{
-    video.addEventListener('mouseover', ()=>{
-        
-        video.style.scale= '.9';
-        video.style.transition = '250ms ease-out'
-        video.play(); video.muted = true;
-        video.currentTime = 10;
-        setTimeout(() => {
-            video.currentTime = 10;
-       }, 7000);
-
-    });
-
-    video.addEventListener('mouseout', ()=>{
-        video.style.scale= '1';
-        video.currentTime = 0;
-        video.pause();
-    });
-
-});
 
 
 // animations on pass 
