@@ -1,22 +1,21 @@
 /*responsive design*/
-@media screen and ( 1034px < width < 1300px){
+@media screen and (1034px < width < 1300px) {
 
-	.container .welcome .intro{
+	.container .welcome .intro {
 		width: 42vw;
-/*		background: red;*/
 	}
 
-	.container .welcome .intro p{
+	.container .welcome .intro p {
 		transform: translateY(15px);
 	}
 
 }
 
 
-@media screen and ( width <= 1200px){
+@media screen and (width <=1200px) {
 
 
-	.welcome .social{
+	.welcome .social {
 		flex-direction: row;
 		justify-content: space-between;
 		height: 5rem;
@@ -26,47 +25,46 @@
 	}
 
 
-	.container .social a i::after{
+	.container .social a i::after {
 		display: none;
 	}
 
-	.container .pass{
+	.container .pass {
 		left: calc(100vw - 60vw);
 	}
 
-	#intro section .present{
+	#intro section .present {
 		width: 100%;
 		left: 0;
-		/* background: yellow; */
+	}
+
+	footer {
+		padding: 1rem;
+		flex-direction: column;
+		row-gap: 5rem;
+	}
+
+	footer .foot-social {
+		align-self: flex-start;
+	}
+
+	footer .creator-social {
+		align-self: flex-end;
+	}
+
+	footer blockquote {
+		transform: translateY(-1rem);
+	}
+
 }
 
-footer{
-	padding: 1rem;
-	flex-direction: column;
-	row-gap: 5rem;
-}
+@media screen and (width <=950px) {
 
-footer .foot-social {
-	align-self: flex-start;
-}
-
-footer .creator-social {
-	align-self: flex-end;
-}
-
-footer blockquote{
-	transform: translateY(-1rem);
-}
-
-}
-
-@media screen and ( width <= 950px){
-
-	header .navigations a:last-child{
+	header .navigations a:last-child {
 		display: none;
 	}
 
-	header ul{
+	header ul {
 		left: 1rem;
 	}
 
@@ -77,29 +75,29 @@ footer blockquote{
 		flex-direction: column;
 	}
 
-	.container .welcome .intro{
-		transform: translate(0 , -5%);
-	}
-	
-	.container .welcome .me{
-		margin-top: min(25%,7rem);
-		width: auto;	
+	.container .welcome .intro {
+		transform: translate(0, -5%);
 	}
 
-	.container .welcome .intro p{
-	transform: translateY(10px);
+	.container .welcome .me {
+		margin-top: min(25%, 7rem);
+		width: auto;
+	}
+
+	.container .welcome .intro p {
+		transform: translateY(10px);
 
 	}
 
-	.welcome .me #cloud-txt{
+	.welcome .me #cloud-txt {
 		width: 35rem;
 	}
 
-	.container .pass{
+	.container .pass {
 		left: calc(100vw - 55vw);
 	}
 
-	.welcome .me > #cloud-txt > p{
+	.welcome .me>#cloud-txt>p {
 		bottom: 11rem;
 		left: 10rem;
 	}
@@ -109,162 +107,162 @@ footer blockquote{
 		width: auto;
 	}
 
-	.welcome .social{
+	.welcome .social {
 		top: max(32rem, 29vh);
 		left: 2rem;
 	}
 
-	.container .projects{
+	.container .projects {
 		height: auto;
 		padding-top: 5rem;
 		padding-bottom: 20rem;
 	}
 
-	.projects #video{
+	.projects #video {
 		grid-template-columns: repeat(4, 1fr);
 		grid-template-rows: repeat(18, 1fr);
 	}
 
 
-#video .one{
-	grid-column: 1 / 5;
-	grid-row: 1 / 6;
-}
+	#video .one {
+		grid-column: 1 / 5;
+		grid-row: 1 / 6;
+	}
 
 
-#video .two{
-	grid-column: 1 / 3;
-	grid-row: 6/ 9;
-}
+	#video .two {
+		grid-column: 1 / 3;
+		grid-row: 6/ 9;
+	}
 
 
-#video .three{
-	grid-column: 3 / 5;
-	grid-row: 6/ 12;
-	z-index: 11;
-}
+	#video .three {
+		grid-column: 3 / 5;
+		grid-row: 6/ 12;
+		z-index: 11;
+	}
 
 
-#video .four{
-	grid-row: 9/ 12;
-	grid-column: 1/3;
-}
+	#video .four {
+		grid-row: 9/ 12;
+		grid-column: 1/3;
+	}
 
 
-#video .five{
-	grid-row: 12/19;
-	grid-column: 1/3;
-}
+	#video .five {
+		grid-row: 12/19;
+		grid-column: 1/3;
+	}
 
 
-#video .six{
-	grid-row: 12 / 15;
-	grid-column: 3 / 5;
-}
+	#video .six {
+		grid-row: 12 / 15;
+		grid-column: 3 / 5;
+	}
 
-#video .seven{
-	grid-row:  15/ 19;
-	grid-column: 3 / 5;
-}
+	#video .seven {
+		grid-row: 15/ 19;
+		grid-column: 3 / 5;
+	}
 
-#introducing #intro span{
-	top: 2rem;
-	margin-bottom: 2rem;
-}
+	#introducing #intro span {
+		top: 2rem;
+		margin-bottom: 2rem;
+	}
 
-#intro section{
-	padding: 2rem;
-}
+	#intro section {
+		padding: 2rem;
+	}
 
 
 
-#intro section .present .txt::before{
+	#intro section .present .txt::before {
 		left: -.1rem;
-}
-#intro section .present .txt::after{
-	bottom: -.3em;
-	right: 0;
-}
+	}
 
-#intro section em{
-	transform: rotate(-10deg) translate(-1rem,-1rem);
-}
+	#intro section .present .txt::after {
+		bottom: -.3em;
+		right: 0;
+	}
 
-.container .reviews{
-	padding: 5rem 1rem;
-}
+	#intro section em {
+		transform: rotate(-10deg) translate(-1rem, -1rem);
+	}
 
-.client-view svg{
-	left: 2.5rem;
-}
+	.container .reviews {
+		padding: 5rem 1rem;
+	}
 
-
-.client-view img{
+	.client-view svg {
 		left: 2.5rem;
-		transform: translate( 0,70%) scale(0);
-		
-}
+	}
 
-.client-view .client::after{
+
+	.client-view img {
+		left: 2.5rem;
+		transform: translate(0, 70%) scale(0);
+
+	}
+
+	.client-view .client::after {
 		left: -1rem;
 		transform: rotate(215deg);
+	}
+
+
+	.client-view .client {
+		width: 60vw;
+		left: 7rem;
+		padding: 2rem;
+	}
+
+	.client>h2::after {
+		left: 0;
+	}
+
+	.client-left>h2 {
+		left: 2rem;
+	}
+
 }
 
-
-.client-view .client{
-	width: 60vw;
-	left: 7rem;
-	padding: 2rem;
-}
-
-.client > h2::after{
-	left: 0;
-}
-
-.client-left > h2{
-	left: 2rem;
-}
-
-}
-
-@media screen and (width <= 1500px){
-	#introducing #intro span{
+@media screen and (width <=1500px) {
+	#introducing #intro span {
 		top: 2rem;
 	}
 }
 
-@media screen and ( 700px <= width <= 1100px){
+@media screen and (700px <=width <=1100px) {
 
-	header .navigations{
+	header .navigations {
 		display: flex;
 	}
 
-	header .menu{
+	header .menu {
 		display: none;
 	}
 
 }
 
 
-@media screen and (width <= 400px){
-	.welcome .intro img{
+@media screen and (width <=400px) {
+	.welcome .intro img {
 		height: 20rem;
 		top: 8.5rem;
 	}
 
-	.welcome .intro p:nth-child(2){
+	.welcome .intro p:nth-child(2) {
 		width: 17.8rem;
-		font-size: 3.1rem;		
+		font-size: 3.1rem;
 	}
 
-	.welcome .intro p:nth-child(2)::after{
+	.welcome .intro p:nth-child(2)::after {
 		height: 1.8rem;
 		width: 1.8rem;
 	}
 
-	.welcome .me #my-pic{
-		transform: translate(0 , -5%);
+	.welcome .me #my-pic {
+		transform: translate(0, -5%);
 	}
-	
-}
 
+}
