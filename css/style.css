@@ -534,11 +534,11 @@ header .contact {
 
 #intro span img {
 	position: absolute;
-	height: clamp(35vw, 31rem, 50em);
-	width: clamp(25vw, 24rem, 45em);
-	left: -40%;
+	height: clamp(35vw, 20rem, 40em);
+	width: clamp(26vw, 16rem, 30em);
+	left: -7dvw;
 	top: 0;
-	filter: drop-shadow(-10px 5px 5px #0009) brightness(100%) contrast(120%) saturate(110%);
+	filter: drop-shadow(-10px 5px 3px rgba(0, 0, 0, 0.3)) brightness(100%) contrast(120%) saturate(110%);
 	pointer-events: none;
 }
 
