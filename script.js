@@ -1,4 +1,11 @@
 
+window.addEventListener("load", () => {
+    let screenLoader = document.querySelector('.load-screen');
+    setTimeout(() => {
+        screenLoader.style.display = "none";
+    }, 2000);
+});
+
 // smooth scrolling on anchors within the page
 
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
@@ -96,7 +103,9 @@ var helloTxt = document.querySelector('.intro p:nth-child(2)');
 var welcome = document.querySelector('.intro p:nth-child(3) span:first-child');
 var voyagers = document.querySelector('.intro p:nth-child(3) span:last-child');
 
-window.onload = () => {
+window.onload = async () => {
+
+    await new Promise (resolve => setTimeout(resolve, 2100));
 
     helloImg.style.opacity = '1';
     helloTxt.style.opacity = '1';

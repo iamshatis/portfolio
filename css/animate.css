@@ -1,3 +1,11 @@
+/* load-screen */
+@keyframes scaleImg {
+	0%{ transform: scale(.4); opacity: 0; }
+	50% { transform: scale(.5); opacity: 1; }
+	100% { transform: scale(.4); opacity: 0; }
+}
+
+
 /*animating cloud*/
 
 @keyframes rotate{

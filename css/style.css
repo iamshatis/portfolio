@@ -22,6 +22,24 @@ body::-webkit-scrollbar {
 	display: none;
 }
 
+.load-screen {
+	background: whitesmoke;
+	width: 100%;
+	height: 100dvh;
+	display: grid;
+    place-items: center;
+	position: fixed;
+	top: 0;
+	z-index: 100;
+}
+
+.animateImg {
+	pointer-events: none;
+	transform: scale(0.5);
+	animation: scaleImg 3s infinite ease-in-out;
+}
+
+
 header {
 	height: min(5em, 20vw);
 	width: 100%;
