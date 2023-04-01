@@ -149,6 +149,7 @@ header .contact {
 
 .container {
 	overflow-x: hidden;
+	display: none;
 }
 
 .container .welcome {

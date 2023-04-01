@@ -1,8 +1,10 @@
-
+//OnLoad Animtaion
 window.addEventListener("load", () => {
     let screenLoader = document.querySelector('.load-screen');
+    let container = document.querySelector('.container');
     setTimeout(() => {
         screenLoader.style.display = "none";
+        container.style.display = 'block';
     }, 2000);
 });
 
