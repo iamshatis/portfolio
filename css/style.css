@@ -149,7 +149,7 @@ header .contact {
 
 .container {
 	overflow-x: hidden;
-	display: none;
+	/* display: none; */
 }
 
 .container .welcome {
@@ -829,7 +829,7 @@ video {
 
 .client-view svg {
 	position: absolute;
-	top: 7rem;
+	top: min(8%,10vw);
 	left: 50%;
 	height: 95%;
 	transform: translateX(-35%);
@@ -974,6 +974,7 @@ video {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+	max-width: 80rem;
 	width: 100%;
 	height: 40rem;
 	margin-top: 5rem;
