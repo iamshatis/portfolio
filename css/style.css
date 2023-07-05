@@ -535,7 +535,7 @@ header .contact {
 	background: transparent;
 	backdrop-filter: blur(2px);
 	-webkit-backdrop-filter: blur(2px);
-	z-index: 0;
+	border-radius: min(8vw, 7rem);
 }
 
 #intro span {
